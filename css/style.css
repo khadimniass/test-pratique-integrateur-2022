@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*pour empécher les débordements*/
+    transition-duration: 3s; /*la duree de transition de toutes les annimations*/
+}
+fieldset{
+    border: solid;
+    margin:0 5rem 5rem 5rem;
+}
+.big-image{
+    flex: 1 auto;
+    border: solid;
+    /* background-image: url("https://www.pauletjose.sn/images/galerie/medium/challenge.jpg"); */
+    background-image: url("https://voyagerloin.com/wp-content/uploads/2013/10/watkins-glen-gorge-rainbow-bridge-new-york-730x1024.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* pour faire des annimation au survol */
+.big-image:hover{
+    transform: scale(.8);
+}
+.full-form{
+    flex: 1;
+}
+.full-form h3{
+    padding-left: 2rem;
+}
+.connexion-social-network button i{
+    color: #fff;
+}
+.input-group-append{
+    cursor: pointer;
+}
+button{
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+.connexion-social-network{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.group-box{
+    margin-left: 2rem;
+}
+
+form p{
+    margin: 0;
+    display: none;
+}
+.invalid{
+    padding: 2px 1px; border: 1px solid red
+}
+#facebook{
+    background: #3b5998;
+}
+/*la barre de scroll */
+*{
+    margin: 0;
+  }
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: linear-gradient(black, rgb(186, 186, 86),black);
+  }
+  /*la barre de scroll */
+  
+
+    /* media query pour adoption mobile */
+    @media screen and (max-width:900px) {
+        .content{
+            flex-direction: column;
+        }
+        .big-image{
+            height: 100vh;
+        }
+        .big-image:hover{
+            transform: scale(1);
+        }
+    }
